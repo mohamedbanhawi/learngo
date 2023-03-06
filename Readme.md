@@ -8,4 +8,4 @@ Golang practice code snippets
 * [Module 3: Composite Data Types](/slice/slice.go)
 * Module 4: Protocls and Formats
     - [JSON](/makejson/makejson.go)
-    - FileIO
+    - [FileIO](/read/read.go) 
