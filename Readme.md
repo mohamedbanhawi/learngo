@@ -14,3 +14,4 @@ Golang practice code snippets
 ## [Functions, Methods, and Interfaces in Go](https://www.coursera.org/learn/golang-functions-methods)
 
 * [Module 1: Functions and Organization](/bubblesort/bubblesort.go)
+* [Module 2: Function Types](/displacement/displacement.go)
