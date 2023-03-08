@@ -15,3 +15,4 @@ Golang practice code snippets
 
 * [Module 1: Functions and Organization](/bubblesort/bubblesort.go)
 * [Module 2: Function Types](/displacement/displacement.go)
+* [Module 3: OOP in GO](/animals/animals.go)
