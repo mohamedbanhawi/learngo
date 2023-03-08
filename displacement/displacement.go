@@ -11,18 +11,18 @@ import (
 	"fmt"
 )
 
-func GenDisplaceFn(a_mpsps, v_mps, s_m float32) func(float32) float32 {
-	return func(t_s float32) float32 {
+func GenDisplaceFn(a_mpsps, v_mps, s_m float64) func(float64) float64 {
+	return func(t_s float64) float64 {
 		return 0.5*a_mpsps*t_s*t_s + v_mps*t_s + s_m
 	}
 }
 
 func main() {
 	// constants
-	var a_mpsps float32 // constant acceleration
-	var v_mps float32   // initial velocity
-	var s_m float32     // initial displacement
-	var t_s float32     //Elapsed time
+	var a_mpsps float64 // constant acceleration
+	var v_mps float64   // initial velocity
+	var s_m float64     // initial displacement
+	var t_s float64     //Elapsed time
 
 	// prompt user for input
 	fmt.Print("Enter constant acceleration (m/s2): ")
@@ -32,7 +32,7 @@ func main() {
 	fmt.Print("Enter initial displacement (m): ")
 	fmt.Scan(&s_m)
 
-	var fn func(float32) float32 = GenDisplaceFn(a_mpsps, v_mps, s_m)
+	var fn func(float64) float64 = GenDisplaceFn(a_mpsps, v_mps, s_m)
 
 	for {
 		fmt.Print("Enter elapsed time (s): ")
