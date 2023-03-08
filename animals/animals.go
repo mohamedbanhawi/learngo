@@ -28,9 +28,9 @@ func (a Animal) Move() {
 func main() {
 	// place holder for valid animals
 	animalMap := map[string]Animal{
-		"cow":   Animal{food: "grass", noise: "moo", locomotion: "walk"},
-		"bird":  Animal{food: "worms", noise: "peep", locomotion: "fly"},
-		"snake": Animal{food: "mice", noise: "hss", locomotion: "slither"},
+		"cow":   {food: "grass", noise: "moo", locomotion: "walk"},
+		"bird":  {food: "worms", noise: "peep", locomotion: "fly"},
+		"snake": {food: "mice", noise: "hss", locomotion: "slither"},
 	}
 
 	// place holder for action values
