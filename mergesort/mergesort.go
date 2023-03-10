@@ -56,8 +56,8 @@ func getInputNumbers() []int {
 
 func sortParition(partition []int, c chan []int) {
 	sort.Ints(partition)
-	c <- partition
 	fmt.Println(partition)
+	c <- partition
 }
 
 func main() {
@@ -69,7 +69,7 @@ func main() {
 		return
 	}
 	numOfPartions := 4
-	paritionSize := int(math.Floor(float64(lenghtSlice) / float64(numOfPartions)))
+	paritionSize := int(math.Round(float64(lenghtSlice) / float64(numOfPartions)))
 
 	sortedMergeSlice := make([]int, 0)
 	c := make(chan []int) // no buffering needed, main routine can only grab one result at a time
@@ -87,6 +87,6 @@ func main() {
 		sortedParition := <-c
 		sortedMergeSlice = append(sortedMergeSlice, sortedParition...)
 	}
-
+	sort.Ints(sortedMergeSlice)
 	fmt.Println(sortedMergeSlice)
 }
