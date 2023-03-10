@@ -17,3 +17,6 @@ Golang practice code snippets
 * [Module 2: Function Types](/displacement/displacement.go)
 * [Module 3: OOP in GO](/animals/animals.go)
 * [Module 4: Interfaces for Abstraction](/vivarium/vivarium.go)
+
+## [Concurrency in Go](https://www.coursera.org/learn/golang-concurrency)
+* [Module 2: Concurrency Basics](/goroutines/goroutines.go)

@@ -1,0 +1,15 @@
+The race condition in this Go program occurs because there are two concurrent goroutines accessing 
+and modifying the global variable "number" without proper synchronization. 
+
+Specifically, the "incrementNumber" goroutine increments the value of "number", 
+while the "printNumber" goroutine prints its value. Since there is no synchronization mechanism in place, 
+it is possible that the "printNumber" goroutine may read the value of "number" before it has been incremented by the "incrementNumber" goroutine, 
+resulting in unpredictable and inconsistent behavior.
+
+In other words, the race condition occurs when the two goroutines execute simultaneously, 
+and the order in which they access and modify the "number" variable is not guaranteed. 
+Depending on the timing of the goroutines' execution, the output of the program can vary, 
+and the printed value of "number" may be either the original value or the incremented value.
+
+To prevent this race condition, the program could use a synchronization mechanism to ensure that only one goroutine can access 
+or modify the "number" variable at a time.
