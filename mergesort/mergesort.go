@@ -24,7 +24,7 @@ import (
 
 func getInputNumbers() []int {
 
-	fmt.Printf("Enter a series of integers\n>")
+	fmt.Printf("Enter a series of integers like (e.g 1 -9 13 4)\n>")
 
 	in := bufio.NewReader(os.Stdin)
 	inputString, err := in.ReadString('\n')
@@ -55,8 +55,8 @@ func getInputNumbers() []int {
 }
 
 func sortParition(partition []int, c chan []int) {
-	sort.Ints(partition)
 	fmt.Println(partition)
+	sort.Ints(partition)
 	c <- partition
 }
 
