@@ -21,3 +21,4 @@ Golang practice code snippets
 ## [Concurrency in Go](https://www.coursera.org/learn/golang-concurrency)
 * [Module 2: Concurrency Basics](/goroutines/goroutines.go)
 * [Module 3: Threads in Go](/mergesort/mergesort.go)
+* [Module 4: Synchronised Communication](/philosopher/philosopher.go)
